@@ -16,9 +16,10 @@ body{
           display: flex;
           justify-content: center;
           align-items: center;
- padding:2rem;
+  
 }
 .containers{
+   
           width: 30rem;
           height: 28rem;
           background-color: chocolate;
@@ -102,6 +103,7 @@ border: none;
        margin-left: 0.5rem;
           position: absolute;
           top: 21rem;
+          left: 10%;
           overflow: hidden;
           border: 0.2rem solid rgba(128, 128, 128, 0.814) ;
           color: aqua;
@@ -123,11 +125,23 @@ form button:hover::before{
  left: 100%;
  transition: all 0.4s linear;
 }
-@media screen and (max-width:480px) {
+@media(max-width:480px) {
+   body{
+      padding: 0 18rem;
+   }
    html{
       font-size: 70%;
    }
    form button{
-      margin-left: 0.5rem;
+      margin-left: 1.6rem;
+   }
+}
+@media(min-width:480px) {
+
+   html{
+      font-size: 100%;
+   }
+   form button{
+      margin-left: 3rem;
    }
 }
